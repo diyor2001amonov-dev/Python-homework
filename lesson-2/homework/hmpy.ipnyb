@@ -1,0 +1,59 @@
+from datetime import date
+
+name = input("Name: ")
+year = int(input("Year of birth: "))
+age = date.today().year - year
+
+print(f"{name}, you are {age} years old.")
+
+txt = 'LMaasleitbtui'
+a = txt [0::2]
+b = txt  [1::2]
+print (a,b)
+
+txt = 'MsaatmiazD'
+
+a = txt[0::2]
+b = txt[-1::-2]
+
+print(a, b)
+txt = "I'am John. I am from London"
+
+c = txt[21::1]
+print(c)
+reverse = "Write a Python program that takes a user input string and prints it in reverse order."
+
+c= reverse[::-1]
+
+print(c)
+text = "Hello, how are you?"
+
+vowels = "aeiouAEIOU"
+count = 0
+
+for v in vowels:
+    count += text.count(v)
+
+print(count)
+
+numbers = [3,10,11,30,164]
+print(max(numbers))
+word = input("Enter a word: ")
+
+cleaned_word = word.replace(" ", "").lower()
+
+if cleaned_word == cleaned_word[::-1]:
+    print(f"'{word}' is a palindrome")
+else:
+    print(f"'{word}' is not a palindrome")
+
+email = input("Enter email: ")
+print(email.split("@")[1])
+
+first_string = "qwertyuioipasdfghjklnbvcx"
+second_string = "12356789" 
+
+all_chars = first_string + second_string
+
+password = "".join(random.choice(all_chars)for _ in range(8))
+print(password)
